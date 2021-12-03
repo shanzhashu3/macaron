@@ -1,0 +1,665 @@
+/* link to fonts */
+@font-face{
+    font-family:OpenSans-Bold;
+    src: url('../fonts/OpenSans-Bold.ttf')
+}
+@font-face{
+    font-family:OpenSans-ExtraBold;
+    src: url('../fonts/OpenSans-ExtraBold.ttf')
+}
+@font-face{
+    font-family:OpenSans-Italic;
+    src: url('../fonts/OpenSans-Italic.ttf')
+}
+@font-face{
+    font-family:OpenSans-Light;
+    src: url('../fonts/OpenSans-Light.ttf')
+}
+@font-face{
+    font-family:OpenSans-LightItalic;
+    src: url('../fonts/OpenSans-LightItalic.ttf')
+}
+@font-face{
+    font-family:OpenSans-Regular;
+    src: url('../fonts/OpenSans-Regular.ttf')
+}
+@font-face{
+    font-family:OpenSans-Semibold;
+    src: url('../fonts/OpenSans-Semibold.ttf')
+}
+/*global reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*fix up for older browsers to properly draw the new semantic elements*/
+
+header,
+nav,
+main,
+aside,
+article,
+section,
+footer,
+figure,
+figcaption {
+    display: block;
+}
+
+
+/*basic text styling*/
+
+html {
+    font-size: 10px;
+    font-family: OpenSans, Helvetica, Arial, sans-serif;
+}
+
+body{
+       background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color:#ffffff;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: normal;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+}
+
+#headerbg{
+    background-image: url(images/index_header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    font-family:OpenSans-ExtraBold;
+    font-size: 36px;
+    text-align: center;
+    color: #ffffff;
+    padding: 43px;
+     
+}
+
+h2{
+    font-family:OpenSans-Bold;
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff;
+    padding: 20px;
+}
+
+/*nav styling*/
+
+nav {
+    padding-top: 12px;
+    padding-bottom: 11px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: right;
+}
+
+nav li {
+    display: inline-block;
+    padding-right: 12px;
+    font-size:13px;
+    text-transform: uppercase;
+    font-family: OpenSans-Semibold;
+}
+
+nav li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/*icon animation*/
+header img{
+    width:60px;
+    height:40px;
+    overflow: hidden;
+    opacity: 80%;
+    transform: scale(1);
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease-out;
+}
+
+header img:hover{
+    opacity: 1;
+    transform: scale(1.4);
+}
+
+a:link{
+  color:#fff;
+}
+
+a:hover{
+  color:#ED9282;
+}
+
+/*basic layout*/
+
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*fluid images*/
+
+img {
+    width
+    height: auto;
+}
+
+/*start index page*/
+/*set the text styling*/
+#text1{
+    background-color: #ce4f2f;
+}
+#text2{
+    background-color: #f09427;
+}
+
+#text1 p,
+#text2 p {
+    padding:100px;
+}
+
+/*the position of image and text in the small screen*/
+
+#pic1,
+#pic2{
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 400px;
+}
+#pic1 {
+    background-image: url(images/infor_row1.jpg);
+}
+
+#pic2 {
+    background-image: url(images/infor_row2.jpg);
+}
+
+/*close index page*/
+
+/*start the story page*/
+/*color box*/
+#story1,
+#story2,
+#story3{
+       padding:20px;
+}
+
+#story1 p,
+#story2 p,
+#story3 p{
+    padding: 20px;
+    font-size: 12px;
+}
+
+#story1 img,
+#story2 img,
+#story3 img{
+    width: 90%;
+    margin: 15px;
+}
+
+#story1{
+    background-color: #b4838d;
+}
+
+#story2{
+    background-color: #a68a7e;
+}
+
+#story3{
+    background-color: #859b6d;
+}
+
+/*end the story page */
+
+/*start the ingredient page*/
+/*background image in boxes, display side by side*/
+.ingredient-box{
+    width: 269px;
+    height: 269px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin:auto;
+}
+
+.bkg01{
+    background-color: #b3838d;
+}
+
+.bkg02{
+    background-color: #f28482;    
+}
+
+.bkg03{
+    background-color: #84a59d;
+}
+
+.bkg04{
+    background-color: #f6bd60;
+}
+
+.bkg05{
+    background-color: #f7ede2;
+}
+
+.bkg06{
+    background-color: #e29578;
+}
+
+/*text animation above the box */
+.innerBox{
+    text-align: center;
+    padding-top:100px;
+/*
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 1s;
+*/
+}
+
+/*
+.ingredient-box:hover .innerBox{
+    opacity:1;
+}
+*/
+
+/*attribute of the text*/
+.innerBox p {
+    font-family:OpenSans-Bold;
+    font-size:25px;
+    /*text-shadow: 3px 1px 1px #DE7E73;*/
+    color: white;
+}
+/*end the ingredient page*/
+
+/*start the method page*/
+.number{
+    font-family:OpenSans-Italic;
+    font-size: 25px;
+}
+#text01{
+    background-color: #ed6a5a;
+}
+#text02{
+    background-color: #ebac64;
+}
+#text03{
+    background-color: #536648;
+}
+#text04{
+    background-color: #d5895d;
+}
+#text05{
+    background-color: #b4838d;
+}
+
+#text01 p,
+#text02 p,
+#text03 p,
+#text04 p,
+#text05 p{
+    padding:100px;
+    font-size: 15px;
+}
+
+/*the position of image and text in the small screen*/
+
+#pic01,
+#pic02,
+#pic03,
+#pic04,
+#pic05{
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 400px;
+}
+#pic01{
+    background-image: url(images/step1.jpg);
+}
+
+#pic02{
+    background-image: url(images/step2.jpg);
+}
+
+#pic03{
+    background-image: url(images/step3.jpg);
+}
+
+#pic04{
+    background-image: url(images/step4.jpg);
+}
+
+#pic05{
+    background-image: url(images/step5.jpg);
+}
+/*end the method page*/
+
+/*start the variations page*/
+.bkg1{
+    background-color:#ed6a5a;
+}
+
+.bkg2{
+    background-color: #ebac64;
+}
+.bkg3{
+    background-color: #536648;
+}
+.bkg4{
+    background-color: #d5895d;
+}
+
+.variation-text p{
+    padding: 69px;
+    font-size: 14px;
+}
+
+.variation-text h2{
+    text-align: left;
+    padding-left: 40px;
+    text-decoration-style:solid;
+    text-decoration-line: underline;
+
+}
+/*end the variations page*/
+
+
+/*footer styling*/
+
+footer{
+    text-align: center;
+    background-color: #e0e0c3;
+    padding:17px;
+    clear: left;
+}
+
+footer p{
+    font-size: 15px;
+    text-decoration: none;
+}
+/*--------------------------*/
+
+/*--------------------------*/
+
+/*--- MEDIA QUERY---*/
+@media only screen and (min-width:560px){
+
+   .ingredient-box{
+    width: 256px;
+    height: 256px;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    margin:5px;
+    
+    }
+
+}
+/*close media query*/
+
+
+/*--------------------------*/
+
+/*--------------------------*/
+
+/*--- MEDIA QUERY---*/
+@media only screen and (min-width:620px){
+    /*start index page*/
+    #pic1{
+        padding-top: 0;
+        /*background-size: 50% 100%;*/
+    }
+    
+    #pic2{
+        padding-top: 0;
+        /*background-size: 50% 100%;
+        background-position: right;*/
+    }
+    
+    #text1{
+       padding: 50px;
+       margin-left: 50%;
+    }
+    
+    #text2{
+        padding: 50px;
+        margin-right: 50%;
+    }
+    
+    #text1 p,
+    #text2 p {
+        padding:20px;
+    }
+    
+    /*close index page*/
+    
+    /*start story page*/
+    #story1,
+    #story2,
+    #story3{
+         float: left;
+         width: 33.333%;
+         
+    }
+    
+    #story1 p,
+    #story2 p,
+    #story3 p{
+    padding: 10px;
+    }
+    /*close story page*/
+    
+    /*start ingredient page*/
+    .ingredient-box{
+    width: 256px;
+    height: 256px;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    margin: 10px;
+    }
+
+    /*close ingredient page*/
+    
+    /*start the method page*/
+    #pic01{
+        padding-top: 0;
+        background-size:  50%;
+    }
+    
+    #pic02{
+        padding-top: 0;
+        background-size: 50% auto;
+        background-position: right;
+    }
+    
+    #pic03{
+        padding-top: 0;
+        background-size: 50% auto;
+        
+    }
+    
+    #pic04{
+        padding-top:0;
+        background-size: 50% auto;
+        background-position: right;
+    }
+    
+    #pic05{
+        padding-top:0;
+        background-size: 50% auto;
+
+    }
+    #text01{
+       padding: 70px;
+       margin-left: 50%;
+    }
+    
+    #text02{
+        padding: 50px;
+        margin-right: 50%;
+    }
+    #text03{
+        padding:50px;
+        margin-left: 50%;
+    }
+    
+    #text04{
+        padding: 37px;
+        margin-right:50%;
+    }
+    
+    #text05{
+        padding:45px;
+        margin-left:50%;
+    }
+    
+    #text01 p,
+    #text02 p,
+    #text03 p,
+    #text04 p,
+    #text05 p{
+        padding:20px;
+        font-size:10px;
+    }
+    /*end the method page*/
+
+    /*start the variations page*/
+    /*end the variations page*/
+    
+    h1{
+        padding:60px;
+    }
+    
+    header img{
+        float:right;
+    }
+    
+    #headerbg{
+        background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    }
+    
+    body{
+       background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    }
+    
+    footer{
+         background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+        clear: left;
+    }
+}
+
+/*close media query*/
+
+
+@media only screen and (min-width:920px) {
+    /*start index page*/
+    #pic1,
+    #pic2{
+        padding-top: 0;
+    }
+    
+    #text1{
+       padding: 100px;
+       margin-left: 50%;
+    }
+    
+    #text2{
+        padding: 100px;
+        margin-right: 50%;
+    }
+    
+    #text1 p,
+    #text2 p {
+        padding:20px;
+    }
+    
+    /*close index page*/
+    /*start story page*/
+    #story1,
+    #story2,
+    #story3{
+         float: left;
+         width: 33.333%;
+         
+    }
+    /*close story page*/
+    
+    /*start ingredient page*/
+    .ingredient-box{
+        width: 250px;
+        height: 250px;
+    }
+
+    /*close ingredient page*/
+    
+    /*start the method page*/
+    #text01{
+       padding: 95px;
+       margin-left: 50%;
+    }
+    
+    #text02{
+        padding: 75px;
+        margin-right: 50%;
+    }
+    #text03{
+        padding:75px;
+        margin-left: 50%;
+    }
+    
+    #text04{
+        padding: 55px;
+        margin-right:50%;
+    }
+    
+    #text05{
+        padding:75px;
+        margin-left:50%;
+    }
+    
+    #text01 p,
+    #text02 p,
+    #text03 p,
+    #text04 p,
+    #text05 p{
+        padding:20px;
+        font-size:13px;
+    }
+    /*end the method page*/
+
+    /*start the variations page*/
+    /*end the variations page*/
+    
+    #wrapper{
+        width: 90%;
+        max-width: 960px;
+    }
+    
+    
+    header img{
+        float: right;
+    }
+    
+    
+}
+/*close media query*/
